@@ -1,0 +1,115 @@
+.blog {
+	.wrapper {
+	display: flex;
+	flex-direction: column;
+	}
+}
+.blog-gallery {
+	display: flex;
+	justify-content: space-between;
+	li {
+		width: calc(100% - (370px*2px - 60px));
+		margin-right: 30px;
+		img {
+			width:100%;
+			display: block;
+		}
+	}
+}
+.blog-gallery li:nth-of-type(3n) {
+	margin-right: 0;
+}
+@media (max-width: 768px) {
+	.blog-gallery li h5 {
+		font-size: 14px
+	}
+}
+@media (max-width: 480px) {
+	.blog-gallery {
+		flex-wrap: wrap;
+		li {
+		width: 100%;
+		margin-right: 0;
+		}
+	}
+}
+
+.blog h2{
+	text-align: center;
+}
+@media (max-width: 480px) {
+	.blog h2{
+		font-size: 24px;
+	}
+}
+.secondaryColor {
+	color: $secondaryColor;
+}
+figcaption h5 {
+	font-size: 18px;
+	margin: 0;
+}
+.blog-link {
+	border-bottom: 1px solid black;
+	display: inline;
+}
+.newsletter-sign-up-title {
+	text-align: center;
+	margin-top:100px;
+	p {
+		max-width: 540px;
+		margin: 0 auto;
+	}
+}
+form {
+	text-align: center;
+	display: block;
+	margin-top: 60px;
+}
+input {
+	color: $secondaryColor;
+	width: 72%;
+	min-width: 400px;
+	height: 50px;
+	background-image: url(../images/email-envelope.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	border: none;
+
+}
+
+.vendor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 100px 0;
+	}
+.vendor-img-wrapper {
+	max-width: calc(20% - (120px/4));
+	margin-right: 30px;
+	img {
+		width: 100%;
+		display: block;
+	}	
+	.vendor-img-wrapper:nth-of-type(5){
+		margin-right:0;
+	}
+}
+@media (max-width: 768px) {
+		.vendor{
+			margin: 30px auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+			}
+	@media (max-width: 480px) {
+	.wrapper .vendor .vendor-img-wrapper {
+			width: calc(33.3% - (60px/3));
+			max-width: initial;
+			margin-right: 30px;
+			margin-bottom: 15px;
+		}
+	.wrapper .vendor .vendor-img-wrapper:nth-of-type(3n) {
+		margin-right: 0;
+	}
+}

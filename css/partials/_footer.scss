@@ -1,0 +1,200 @@
+footer{
+	border-top: 1px solid rgb(225, 225, 225);
+	border-bottom:  1px solid rgb(225, 225, 225);
+	.wrapper {
+		padding: 100px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.address {
+	width: calc(42.7% - 33px);
+	margin-right: 33px;
+	p:first-child {
+		margin-top: 40px;
+	}
+}
+.services {
+	width: calc(25% - 25px);
+	margin-right: 25px;
+}
+.account {
+	width: calc(25% - 25px);
+	margin-right: 25px;
+}
+.instagram {
+	width: 23%;
+}
+footer p {
+	color: $secondaryColor;
+	strong {
+		color: black;
+	}
+}
+.services li a, .account li a {
+	color: $secondaryColor;
+	&:hover {
+		color: black;
+	}
+}
+footer h4 {
+	margin-top: 0;
+}
+.address-social-bar {
+	display: flex;
+	font-size: 24px;
+	max-width: 240px;
+	justify-content: space-between;
+	margin-top: 46px;
+}
+.address-social-bar li a:hover{
+	color: $secondaryColor;
+}
+
+.instagram__gallery {
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	max-width: 270px;
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+.instagram__gallery li {
+	width: calc(33.3% - (16px/2));
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+.instagram__gallery li:nth-of-type(3n) {
+	margin-right: 0;
+}
+	
+footer h4 {
+	font-size: 24px;
+	&:after {
+		content: '';
+		background-color: $fourthColor;
+		width: 50px;
+		height: 1px;
+		display: block;
+	}
+}
+.credit{
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		max-width: calc(20% - 15px);
+		margin-right: 15px;
+		margin-top: 40px;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+.copyright {
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 940px) {
+	footer .wrapper {
+		// flex-direction:column;
+		flex-wrap: wrap;
+	}
+	.address {
+	width: calc(50% - (155px/3));
+	margin-right: 45px;
+}
+.services {
+	width: calc(20% - (155px/3));;
+	margin-right: 45px;
+}
+.account {
+	width: calc(30% - (155px/3));
+	margin-right: 0;
+}
+.instagram {
+	width: 100%;
+	margin:auto;
+}
+.instagram__gallery {
+	flex-wrap: nowrap;
+	max-width: 100%;
+	margin: auto;
+}
+.instagram__gallery li:nth-of-type(3){
+	margin-right: 8px;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	footer h4 {
+		font-size: 18px
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	footer .wrapper {
+		justify-content: center;
+	}
+	.address {
+	width: 100%;
+	margin-right: 0;
+	text-align: center;
+}
+	.address-social-bar {
+	display: flex;
+	font-size: 18px;
+	max-width: 240px;
+	margin: auto;
+	justify-content: space-between;
+	margin-top: 46px;
+	margin-bottom: 30px
+}
+
+.services {
+	width: 40%;
+	margin-right: 15px;
+}
+.account {
+	width: 30%;
+	margin-right: 0;
+}
+.instagram {
+	width: 100%;
+	text-align: center;
+}
+.instagram h4 {
+	position: relative;
+	margin-top: 15px;
+}
+.instagram h4:after{
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+.instagram__gallery {
+	max-width: 100%;
+
+}
+.credit {
+	width: 270px;
+	margin: auto;
+}
+.credit li {
+	margin: 15px auto;
+}
+}
+@media (max-width: 480px) {
+	.copyright.wrapper {
+		display: block;
+		text-align: center;
+	}
+}	

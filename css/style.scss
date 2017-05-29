@@ -1,0 +1,86 @@
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/mainbody";
+@import "partials/gallery";
+@import "partials/testimonials";
+@import "partials/footer";
+@import "partials/blog";
+
+body {
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+h1 {
+	font-size:60px;
+}
+h2 {
+	font-size:36px;
+}
+h3 {
+	font-size:32px;
+}
+h4 {
+	font-size: 24px;
+}
+
+ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.wrapper {
+	max-width:1170px;
+	margin: auto;
+}
+.after-line:after {
+	content: "";
+	height: 1px;
+	width: 120px;
+	background: linear-gradient(to right, $blue 0%, $blue 30%, lightgray 30%, lightgray 70%, $blue 70%, $blue 100%);
+	display: block;
+	margin: auto;
+}
+// to fix the lack of margin once wrapper fills screen
+
+@media (max-width: 1170px) {
+	.wrapper {
+	max-width:95%;
+	margin: auto;
+}
+}
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	body {
+	// background-color: blue;
+	}
+	.wrapper {
+	max-width:95%;
+	margin: auto;
+}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	body {
+	// background-color: tan;
+	}
+	h2 {
+		font-size: 30px;
+		margin-bottom:30px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	body {
+	// background-color: peachpuff;
+	}
+}
+

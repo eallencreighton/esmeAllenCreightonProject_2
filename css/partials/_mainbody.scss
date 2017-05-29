@@ -1,0 +1,250 @@
+main {
+	background-image: url(../images/hero.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 820px;
+	padding-top: 105px;
+	.main--overlay {
+		background-color:rgba(255, 241, 238, 0.5);
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.title {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: auto;
+			text-align: center;
+			h3 {
+				color:$secondaryColor;
+				margin:0;
+				font-weight: 400;
+			}
+		}
+	}
+}
+h1 {
+	margin: 0;
+	letter-spacing: 2px
+}
+.title--button {
+	background-color: $tertiaryColor;
+	border: none;
+	color: white;
+	max-width: 180px;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 15px 35px;
+	align-self:center;
+	margin-top:8%;
+	margin-bottom:-20%;
+}
+.fake-flickity{
+	text-align: center;
+	padding: 40px;
+	letter-spacing: 2px;
+	color: black;
+}
+.fake-flickity i:active {
+	color: $secondaryColor;
+}
+
+.about {
+	text-align:center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 100px 0;
+}
+@media (max-width: 768px) {
+	.about {
+	margin: 50px 0 30px;
+	}
+}
+@media (max-width: 480px) {
+	.about {
+		margin: 50px 0;
+	}
+}
+.about--title {
+	background-image: url(../images/Plant.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	h5 {
+		font-size: 18px;
+		font-weight: 400;
+		color: $fourthColor;
+		margin: 0;
+	}
+}
+.about h2 {
+	margin: 0;
+}
+@media (max-width: 480px) {
+	.about h2{
+		font-size: 24px;
+	}
+}
+.about p {
+	color: $secondaryColor;
+	max-width: 770px;
+	align-self: center;
+	.capitalize {
+		text-transform: uppercase;
+		color: black;
+		font-weight: 500;
+	}
+}
+// categories gallery starts here
+.categories-gallery {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.plants {
+	position: relative;
+	button{
+		background-color: #fff;
+		border: none;
+		height: 90px;
+		position: absolute;
+		top:50%;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		p:first-child{
+		font-size: 24px;
+		margin: 0;
+		}
+	}
+}
+.air-plants {
+	background-image:url(../images/categories1.jpg); 
+	padding-bottom: calc(50% - 33px);
+	background-size: cover;
+	background-position: center;
+	width: calc(41.5% - 15px);
+	margin-right: 15px;
+	button {
+		width: 210px;
+	}
+}
+.side-plants{
+	width: calc(58.5% - 15px);
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	button {
+		width: 220px;
+	}
+}
+.other-plants {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.office-plants {
+	max-width: calc(50% - 15px);
+	margin-right: 15px;
+}
+.house-plants {
+	max-width: calc(50% - 15px);
+	margin-left: 15px;
+}
+.plant-containers {
+	max-width:100%;
+	button {
+		width: 250px
+	}
+}
+.plants img{
+	display: block;
+	width: 100%;
+}
+	button p:last-child {
+	font-size: 16px;
+	color: $secondaryColor;
+	margin: 0;
+}
+@media (max-width: 940px) {
+	.plants button p:first-child{
+		font-size: 18px;
+	}
+	.side-plants button{
+			width: 168px;
+			height: 70px;
+			font-size: 18px;
+	}
+	.plant-containers button {
+		width: 240px;
+	}
+}
+@media (max-width: 768px) {
+	.air-plants {
+		width: 80%;
+		margin: 30px auto;
+		height: 300px;
+	}
+	.side-plants {
+		width: 80%;
+		margin: auto;
+	}
+	.side-plants button{
+			width: 160px;
+			height: 70px;
+			font-size: 18px;
+	}
+}
+@media (max-width: 480px) {
+	.office-plants, .house-plants{
+		max-width: 100%;
+		margin: 0 0 30px 0;
+		display: block;
+		img {
+			width: 100%;
+		}
+	}
+	.side-plants .other-plants .office-plants {
+		width: 100%;
+	}
+	.side-plants .other-plants .house-plants {
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+
+.popular--title {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	.mini-nav {
+		display: flex;
+		align-self: center;
+		width: 395px;
+		justify-content: space-between;
+		font-weight: 400;
+		font-size: 18px;
+		h5{
+			margin: 0;
+		}
+	}
+}
+.mini-nav li {
+	border-bottom: 1px solid white;
+	padding: 0;
+	margin-bottom: 50px;
+	&:hover {
+	border-bottom: 1px solid black;
+	}
+}
+
+

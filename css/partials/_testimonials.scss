@@ -1,0 +1,110 @@
+.customer-testimonials {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	min-height: 620px;
+	display: flex;
+	flex-wrap: wrap;
+	.customer-quote, .customer-video {
+		width: 50%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+}
+.customer-quote {
+	background-image: url(../images/customer-quote.jpg);
+	img {
+		max-width: 55px;
+		align-self: center;
+	}
+}
+.customer-video {
+	background-image: url(../images/video-background.jpg);
+	background-size: cover;
+	position: relative;
+	.customer-video-overlay {
+		background-color: rgba(26, 26, 38, 0.5);
+		position:absolute;
+		top:0;
+		bottom:0;
+		left: 0;
+		right: 0;
+		color: white;
+		display: flex;
+		flex-wrap:wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		}
+	}
+.customer-video-title {
+	margin-top: 27px;
+}
+.subtitle {
+	text-transform: uppercase;
+	letter-spacing: 2px
+}
+
+.circle-toggle {
+	display: inline-block;
+	margin: auto;
+	align-items: center;
+	transition: all 1s;
+}
+.circle-toggle i{
+	color: $secondaryColor;
+	font-size: 30px;
+	margin: 0 3px;
+}
+
+.circle-toggle i:hover{
+	transform: scale(1.7);
+}
+
+@media (max-width: 940px) {
+	.customer-testimonials {
+	flex-direction: column;
+	.customer-quote, .customer-video {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	.customer-video {
+		min-height: 350px;
+	}
+}
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.customer-testimonials {
+		justify-content: center;
+		margin-top: 30px
+	}
+	.customer-video-title {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.customer-video-title {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	img{
+		width: 75%;
+		margin: auto;
+		margin-bottom: 8px;
+	}
+	}
+	.customer-video-title img {
+		margin-bottom: 8px;
+	}
+	.customer-video-title p {
+		margin: 0;
+	}
+	.circle-button-container img{
+		width:75px;
+	}
+}

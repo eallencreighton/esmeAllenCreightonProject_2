@@ -1,0 +1,91 @@
+nav {
+	position: fixed;
+	z-index: 9;
+ 	width: 100%;
+	background-color: #fff;
+	.wrapper{
+	min-height: 105px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	}
+}
+.nav {
+	width: 33.3%;
+	display:flex;
+	justify-content:space-between;
+	text-transform: uppercase;
+	font-weight: 500;
+		li a:hover {
+			color: $secondaryColor;
+		}
+	}
+	a:hover {
+		color: $secondaryColor;
+	}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	nav .wrapper {
+		justify-content: flext-start;
+	}
+	.nav  {
+		display: none;
+	}
+	.logo {
+		width: 100%;
+		display: block;
+	}
+.logo img {
+	position: absolute;
+	left: 0;
+	}
+}
+
+
+.nav li {
+	flex: 1 2 auto;
+}
+
+.shop-nav {
+	flex: 1 0 auto;
+	display: flex;
+	width: 33.3%;
+	justify-content: flex-end;
+	font-size: 20px;
+		li {
+		position: relative;
+		margin-left: 30px;
+		float: right;
+
+		// flex: 1 0 auto;
+		.basket {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+		}
+	}
+}
+.logo {
+	width: 33.3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 auto;
+	// position: relative;
+	// width: 50%;
+}
+// .logo img {
+// 	position: absolute;
+// 	transform: translateY(-50%);
+// 	left: 44%;}
+	// flex:1 0 auto;
+	// margin-left: 12%;
+	@media (max-width: 480px) {
+	h1{
+		letter-spacing: 1px;
+		line-height:80px;
+	}
+}
